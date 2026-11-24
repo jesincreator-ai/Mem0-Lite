@@ -45,3 +45,7 @@ The API has no built-in authentication and is for localhost/private-network use.
 ```bash
 pytest
 ```
+
+
+## ESP32-WROOM MicroPython edition (new)
+`esp32_mem0.py` is a small consent-gated JSON memory manager for MicroPython. It prefers `/sd/billi/memories.json` and falls back to local `memories.json` if the SD directory is unavailable. Browser demo: `mobile_test.html`. This is separate from the existing SQLite desktop/API implementation.
